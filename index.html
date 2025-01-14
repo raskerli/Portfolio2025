@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafig Asgarli Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Progress Indicator -->
+    <div id="progress-bar"></div>
+
+    <!-- Header Section -->
+    <header class="text-center" id="home">
+        <img src="images/my_photo.png" alt="Rafig Asgarli" class="profile-picture rounded-circle">
+        <h1>Rafig Asgarli</h1>
+        <p>Data Science | Machine Learning | Backend Development</p>
+    </header>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-custom-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand text-custom-light" href="#home">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-custom-light" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link text-custom-light" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link text-custom-light" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link text-custom-light" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" class="full-screen-section">
+        <div class="container text-center">
+            <h2 class="animated-title">About Me</h2>
+            <p class="intro-text">
+                I am a computer science student with a passion for solving problems and creating impactful projects in
+                data science, machine learning, and backend development.
+            </p>
+            <div class="row mt-4">
+                <!-- Timeline Section -->
+                <div class="col-md-6">
+                    <h5 class="animated-subtitle">Timeline</h5>
+                    <ul class="timeline">
+                        <li><span>2021–2023:</span> High School at ADA</li>
+                        <li><span>2023–2027:</span> Bachelor’s in Computer Science at ADA University</li>
+                        <li><span>2024:</span> Focused on Data Science & Machine Learning</li>
+                    </ul>
+                </div>
+
+                <!-- Fun Facts Section -->
+                <div class="col-md-6">
+                    <h5 class="animated-subtitle">Fun Facts</h5>
+                    <div class="fun-facts">
+                        <div class="fact-box">
+                            <p>I speak <strong>5 languages</strong> fluently!</p>
+                        </div>
+                        <div class="fact-box">
+                            <p>I enjoy playing chess and analyzing strategies.</p>
+                        </div>
+                        <div class="fact-box">
+                            <p>I've built over <strong>10+ projects</strong> on GitHub!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="full-screen-section">
+        <div class="container text-center">
+            <h2>Projects</h2>
+            <div id="projectCarousel" class="project-carousel">
+                <div class="project-item active">
+                    <img src="images/project1.png" alt="Project 1" class="img-fluid rounded">
+                    <div class="project-description">
+                        <h5>Blackjack Game</h5>
+                        <p>This project is a browser-based implementation of the classic Blackjack card game, also known
+                            as 21. The game is designed to be simple, interactive, and visually appealing. It allows a
+                            player to compete against a virtual dealer, with game mechanics that mimic the traditional
+                            card game rules.</p>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <img src="images/project2.png" alt="Project 2" class="img-fluid rounded">
+                    <div class="project-description">
+                        <h5>Data Engineering Team Project</h5>
+                        <p>Collaborated with Team 33 to create a weather data analysis system for Baku, Azerbaijan.
+                            Used Python libraries like `BeautifulSoup` and `requests` for web scraping data from
+                            AccuWeather.
+                            Processed and cleaned the data with `pandas`, visualized trends using `Matplotlib`,
+                            and generated actionable insights. Contributed to the project's architecture, data cleaning,
+                            and visualization tasks, ensuring a robust and efficient data pipeline.</p>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <img src="images/project3.png" alt="Project 3" class="img-fluid rounded">
+                    <div class="project-description">
+                        <h5>Blog Website</h5>
+                        <p>I've built a dynamic and interactive blog website using Node.js, Express.js, and EJS. This
+                            platform allows users to seamlessly create, edit, and delete posts, providing a robust and
+                            user-friendly blogging experience.
+                            Key features include:
+                            📜 Create and publish blog posts effortlessly
+                            ✏️ Edit existing posts with ease
+                            🗑️ Delete posts when needed
+                            🗂️ Organized display of posts by category
+                            📱 Responsive design for a great user experience on any device</p>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <img src="images/more.png" alt="Project 4" class="img-fluid rounded">
+                    <div class="project-description">
+                        <h5>For More</h5>
+                        <p>Interested in exploring more of my work? Visit my GitHub profile to view additional projects
+                            and contributions.</p>
+                    </div>
+                </div>
+            </div>
+            <button id="prevProject" class="btn btn-primary">Previous</button>
+            <button id="nextProject" class="btn btn-primary">Next</button>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="full-screen-section">
+        <div class="container text-center">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-box">
+                    <h5>Python</h5>
+                    <p>Data Science | Backend</p>
+                </div>
+                <div class="skill-box">
+                    <h5>Node.js</h5>
+                    <p>Backend Framework</p>
+                </div>
+                <div class="skill-box">
+                    <h5>Data Science Tools</h5>
+                    <p>NumPy, pandas, Matplotlib</p>
+                </div>
+                <div class="skill-box">
+                    <h5>Problem Solving</h5>
+                    <p>DSA & Algorithms</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="full-screen-section">
+        <div class="container text-center">
+            <h2>Contact</h2>
+            <div class="d-flex justify-content-center">
+                <img src="images/mail.webp" alt="Email" class="contact-icon bounce">
+                <a href="mailto:your-email@example.com" class="ms-2 text-decoration-none">Email Me</a>
+            </div>
+            <div class="d-flex justify-content-center">
+                <img src="images/github.png" alt="GitHub" class="contact-icon bounce">
+                <a href="https://github.com/raskerli" target="_blank" class="ms-2 text-decoration-none">GitHub</a>
+            </div>
+            <div class="d-flex justify-content-center">
+                <img src="images/linkedIn.png" alt="LinkedIn" class="contact-icon bounce">
+                <a href="https://linkedin.com/in/rafig-asgarli-89230b1a7/" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center bg-custom-dark text-custom-light py-3">
+        <p>&copy; 2025 Rafig Asgarli. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
